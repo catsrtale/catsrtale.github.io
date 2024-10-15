@@ -2,9 +2,9 @@
 function showImage(imageNumber) {
     const photoDisplay = document.getElementById("photo-display");
     if (imageNumber === 1) {
-        photoDisplay.src = "/photo1.jpg"; // Caminho da foto 1
+        photoDisplay.src = "photo1.jpg"; // Caminho da foto 1
     } else if (imageNumber === 2) {
-        photoDisplay.src = "/photo2.jpg"; // Caminho da foto 2
+        photoDisplay.src = "photo2.jpg"; // Caminho da foto 2
     }
     photoDisplay.style.display = "block";
     photoDisplay.style.opacity = 1;
