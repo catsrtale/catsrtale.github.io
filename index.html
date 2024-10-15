@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário do Junior</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="rockstar-text">Feliz Aniversário, Junior!</h1>
+        <p>Nascido em 15/10/1977</p>
+    </header>
+
+    <section>
+        <h2>Poema de Ariano Suassuna</h2>
+        <blockquote>
+            "O aniversário é uma celebração da vida, uma contagem que mistura a alegria com o tempo, sem esquecer da finitude, 
+            mas sempre com o olhar no amanhã, para fazer do hoje uma eternidade possível."
+        </blockquote>
+    </section>
+
+    <section class="gallery">
+        <h2>Fotos</h2>
+        <div class="photo-container">
+            <button onclick="showImage(1)">Foto 1</button>
+            <button onclick="showImage(2)">Foto 2</button>
+        </div>
+        <img id="photo-display" src="" alt="Foto" style="display:none;">
+    </section>
+
+    <footer>
+        <p>Rock on! \m/</p>
+        <button onclick="toggleRockShow()">Modo Rock Show</button>
+        <audio controls autoplay loop>
+            <source src="musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta o player de música.
+        </audio>
+    </footer>
+
+    <!-- Contêiner de fogos de artifício -->
+    <div id="fireworks"></div>
+
+    <!-- Luzes piscando -->
+    <div id="light-show">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
